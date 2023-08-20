@@ -16,7 +16,7 @@ class FontImageGeneratorApp:
         self.style.configure("TButton", padding=6)
         self.style.configure("TCheckbutton", padding=6)
 
-        self.root.geometry("400x450")  # Set the initial size of the window
+        self.root.geometry("600x550")  # Set the initial size of the window
         
         self.font_label = tk.Label(root, text="Select fonts:")
         self.font_label.pack()
@@ -82,6 +82,9 @@ class FontImageGeneratorApp:
 
         self.error_label = ttk.Label(root, text="", foreground="red")
         self.error_label.pack()
+
+        self.name_label = ttk.Label(root, text="Created by Rumit Pathare", foreground="gray")
+        self.name_label.pack()
 
     def display_error(self, error_message):
         self.error_label.config(text=error_message)
@@ -166,4 +169,5 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     root = tk.Tk()
     app = FontImageGeneratorApp(root)
+    root.minsize(600, 550)
     root.mainloop()

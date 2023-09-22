@@ -2,7 +2,7 @@
 
 The Font Image Generator App is a simple tool that allows you to create images of characters using various fonts. It's particularly useful for generating character datasets for machine learning or data analysis tasks.
 
-### Latest Release v0.1 [Download](https://github.com/Rumit95/Charaters_Generator_App/releases)
+### Latest Release v0.1 [Download](https://github.com/Rumit95/Charaters_Generator_App/releases/download/App/Alpha_Gen.exe)
 
 ## Features
 

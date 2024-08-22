@@ -58,7 +58,7 @@ class FontImageGeneratorApp:
         self.capitals_checkbox = tk.Checkbutton(root, text="Capital Letters", variable=self.capitals_var)
         self.capitals_checkbox.pack()
 
-        self.lowers_checkbox = tk.Checkbutton(root, text="Small Letters", variable=self.small_var)
+        self.lowers_checkbox = tk.Checkbutton(root, text="Small Letters", variable=self.lowers_var)
         self.lowers_checkbox.pack()
 
         self.numbers_checkbox = tk.Checkbutton(root, text="Numbers", variable=self.numbers_var)

@@ -148,7 +148,8 @@ class FontImageGeneratorApp:
                     draw = ImageDraw.Draw(image)
 
                     text = letter
-                    text_width, text_height = draw.textsize(text, font)
+                    text_width = draw.textlength(text, font)
+                    text_height = font_size
                     x = (image_width - text_width) // 2
                     y = (image_height - text_height) // 2
 

@@ -49,7 +49,7 @@ class FontImageGeneratorApp:
         self.large_checkbox.pack(padx=10, pady=(0, 10))
 
         self.capitals_var = tk.IntVar()
-        self.small_var = tk.IntVar()
+        self.lowers_var = tk.IntVar()
         self.numbers_var = tk.IntVar()
 
         self.case_label = tk.Label(root, text="Select letter case:")
@@ -58,8 +58,8 @@ class FontImageGeneratorApp:
         self.capitals_checkbox = tk.Checkbutton(root, text="Capital Letters", variable=self.capitals_var)
         self.capitals_checkbox.pack()
 
-        self.small_checkbox = tk.Checkbutton(root, text="Small Letters", variable=self.small_var)
-        self.small_checkbox.pack()
+        self.lowers_checkbox = tk.Checkbutton(root, text="Small Letters", variable=self.small_var)
+        self.lowers_checkbox.pack()
 
         self.numbers_checkbox = tk.Checkbutton(root, text="Numbers", variable=self.numbers_var)
         self.numbers_checkbox.pack()
@@ -116,7 +116,7 @@ class FontImageGeneratorApp:
         selected_characters = ""
         if self.capitals_var.get():
             selected_characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        if self.small_var.get():
+        if self.lowers_var.get():
             selected_characters += "abcdefghijklmnopqrstuvwxyz"
         if self.numbers_var.get():
             selected_characters += "0123456789"
